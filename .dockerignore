@@ -4,8 +4,6 @@ compose.yml
 Dockerfile
 LICENSE
 README.md
-data/
-ollama/
 *.log
 *.json
 __pycache__/

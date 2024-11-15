@@ -3,6 +3,7 @@
 !.env.example
 models/
 data/
+ollama/
 
 *.json
 logs/
