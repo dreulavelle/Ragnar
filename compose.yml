@@ -1,0 +1,18 @@
+services:
+  ragnar:
+    build: .
+    image: spoked/ragnar:latest
+    container_name: ragnar
+    restart: unless-stopped
+    tty: true
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - OLLAMA_MODELS=/ollama/.ollama/models
+    ports:
+      - 11777:11434
+    volumes:
+      - ./data:/app/data
+      - ./ollama:/home/ragnar/.ollama
+    devices:
+      - /dev/dri:/dev/dri

@@ -11,9 +11,18 @@ package-mode = false
 python = "^3.11"
 pydantic = "^2.9.2"
 discord-py = "^2.4.0"
+requests = "^2.32.3"
+langchain = "^0.3.7"
+beautifulsoup4 = "^4.12.3"
+apscheduler = "^3.10.4"
+ollama = "^0.3.3"
+loguru = "^0.7.2"
+llm-axe = "^1.1.8"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.3"
+isort = "^5.13.2"
+black = "^24.10.0"
 
 [build-system]
 requires = ["poetry-core"]
